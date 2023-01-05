@@ -1,0 +1,766 @@
+.cartArea {
+  max-width: 50%;
+  flex: 0 0 50%;
+  text-align: right;
+}
+.mini-cart ul.cart-login {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  margin: 10px 0 0;
+}
+.mini-cart ul.cart-login li a:hover {
+  color: #ff001a;
+}
+.cart-login > li:hover .cart-dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+}
+.cart-login > li .cart-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  z-index: 13;
+  display: table;
+  background: #fff;
+  border: 1px solid rgba(129,129,129,.2);
+  text-align: left;
+  padding: 10px 20px;
+  min-width: 400px;
+  margin-top: -10px;
+}
+.cart-dropdown-inner .login-title {
+  border-bottom: 1px solid rgba(129,129,129,.2);
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+.cart-dropdown-inner .login-title .create-account-link {
+  float: right;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ff0019;
+}
+.cart-dropdown-inner > .woocommerce > h2 {
+  display: none;
+  font-size: 2rem;
+}
+.cart-dropdown-inner > .woocommerce > form {
+  border: none;
+  padding: 0px;
+  margin: 30px 0 0;
+}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register { 
+  text-align: left;
+  border-radius: 5px;
+}
+.woocommerce form .form-row {
+  display: block;
+}
+.woocommerce form .form-row {
+  padding: 3px;
+  margin: 0 0 6px;
+}
+.woocommerce form .form-row-wide, .woocommerce-page form .form-row-wide {
+  clear: both;
+}
+.form-row{
+  flex-wrap: wrap;
+}
+.woocommerce form .form-row::after, .woocommerce form .form-row::before, .woocommerce-page form .form-row::after, .woocommerce-page form .form-row::before {
+  content: " ";
+  display: table;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.woocommerce form .form-row label {
+  line-height: 2;
+}
+.woocommerce form .form-row label, .woocommerce-page form .form-row label {
+  display: block;
+}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+  border: 1px solid #d3ced2;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 5px;
+}
+.woocommerce form .form-row .required {
+  visibility: visible;
+}
+.woocommerce form .form-row .required {
+  color: red;
+  font-weight: 700;
+  border: 0!important;
+  text-decoration: none;
+}
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  line-height: normal;
+}
+.cart-dropdown-inner > .woocommerce > form input {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.woocommerce form .form-row {
+  display: block;
+}
+.woocommerce form .form-row {
+  padding: 3px;
+  margin: 0 0 6px;
+}
+.woocommerce form .form-row-wide, .woocommerce-page form .form-row-wide {
+  clear: both;
+}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+  border: 1px solid #d3ced2;
+  padding: 35px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 30px;
+}
+.woocommerce form .password-input, .woocommerce-page form .password-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  line-height: normal;
+}
+.woocommerce form .password-input input[type=password], .woocommerce-page form .password-input input[type=password] {
+  padding-right: 2.5rem;
+}
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
+  position: absolute;
+  right: 0.7em;
+  top: 0.7em;
+  cursor: pointer;
+}
+.cart-dropdown-inner > .woocommerce > form .woocommerce-form-login__submit {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  background: #ff0019!important;
+  border-color: #ff0019!important;
+  color: #fff;
+  font-weight: 500;
+}
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+  float: left;
+  margin-right: 1em;
+}
+.woocommerce form .show-password-input::after, .woocommerce-page form .show-password-input::after {
+  font-family: WooCommerce;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 0.618em;
+  content: "\e010";
+  text-decoration: none;
+}
+.woocommerce form .show-password-input.display-password::after, .woocommerce-page form .show-password-input.display-password::after {
+  color: #585858;
+}
+.password-container{
+  width: 400px;
+  position: relative;
+}
+.password-container input[type="password"],
+.password-container input[type="text"]{
+  width: 100%;
+  padding: 12px 36px 12px 12px;
+  box-sizing: border-box;
+}
+.fa-eye{
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  cursor: pointer;
+  color: lightgray;
+}
+.hero {
+    background-color: #1d2026;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/595bc70ff5e23172afe415d4/1664276738174-L5CMSW29YOL84Q824TEW/wranovsky-crystal-chandeliers.jpg?format=1500w");
+    height: 90vh;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    text-align: end;
+}
+button{
+    cursor: pointer;
+    background: #efefef;
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    border: 0;
+  outline: 0;
+  transition: background 0.5s;
+  
+  }
+
+ 
+  .lamp{
+    position: absolute;
+    width: 100px;
+    left: 12%;
+    top: 0%;
+  }
+  .light{
+    position: absolute;
+    top: 190px;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 300px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .active{
+    background: green;
+  }
+  .active{
+    background: #fff;
+    margin-left: 31px;
+  }
+  .on{
+    opacity: 1;
+  }
+  .texi {
+    top: 200%;
+  }
+  .image1{
+    background-image: url("https://www.ultronicslights.com/wp-content/uploads/2019/07/slider-2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+  
+  }
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  .container-image2{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image2{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image2:hover .image2{
+    opacity: 0.9;
+  }
+  
+  .container-image2:hover .middle{
+    opacity: 1;
+  }
+  
+  .text1{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image3{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image3{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle1{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image3:hover .image3{
+    opacity: 0.9;
+  }
+  
+  .container-image3:hover .middle1{
+    opacity: 1;
+  }
+  
+  .text2{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: 2px;
+    padding: 36px 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image4{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image4{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle2{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image4:hover .image4{
+    opacity: 0.9;
+  }
+  
+  .container-image4:hover .middle2{
+    opacity: 1;
+  }
+  
+  .text3{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image5{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image5{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle3{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image5:hover .image5{
+    opacity: 0.9;
+  }
+  
+  .container-image5:hover .middle3{
+    opacity: 1;
+  }
+  
+  .text4{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image6{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image6{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle4{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image6:hover .image6{
+    opacity: 0.9;
+  }
+  
+  .container-image6:hover .middle4{
+    opacity: 1;
+  }
+  
+  .text5{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image7{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image7{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle5{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image7:hover .image7{
+    opacity: 0.9;
+  }
+  
+  .container-image7:hover .middle5{
+    opacity: 1;
+  }
+  
+  .text6{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image8{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image8{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle6{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image8:hover .image6{
+    opacity: 0.9;
+  }
+  
+  .container-image8:hover .middle6{
+    opacity: 1;
+  }
+  
+  .text7{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image9{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image9{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle7{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image9:hover .image9{
+    opacity: 0.9;
+  }
+  
+  .container-image9:hover .middle7{
+    opacity: 1;
+  }
+  
+  .text8{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  .container-image10{
+    position: relative;
+    width: 100%;
+  }
+  
+  .image10{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle8{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-image10:hover .image10{
+    opacity: 0.9;
+  }
+  
+  .container-image10:hover .middle8{
+    opacity: 1;
+  }
+  
+  .text9{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin: -38px;
+    padding: 75px 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+    
+  }
+  .headingH2 em{
+    color: #ff0019;
+    font-style: normal;
+    font-size: 26px;
+    margin-bottom: 12px;
+    letter-spacing: 1.5px;
+    text-align: center !important;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .wpb_content_element{
+    margin-bottom: 15px;
+}
+.home-shop-btn {
+  padding: 13px 20px;
+  
+}
+.home-shop-btn {
+  background: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.home-shop-btn:hover:before {
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+}
+.home-shop-btn:before {
+  content: '';
+  position: absolute;
+ z-index: -1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+color:#fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  background: black;
+  display: block;
+}
+.home-shop-btn a.btn.btn-shop {
+  color: #fff;
+  padding: 0;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  z-index: 2;
+}
+.click{
+  height: 36px;
+  width: 36px;
+margin: 5px;
+}
+.checkbox-item {
+  border: 15px solid #debe96 !important;
+
+}
